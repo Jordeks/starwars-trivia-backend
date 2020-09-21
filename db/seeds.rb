@@ -13,8 +13,6 @@ p3 = Planet.create(name: "Dagobah", population: "unknown", climate: "It has two 
 p4 = Planet.create(name: "Naboo", population: "4.5 billion", climate: "Temperate", planet_image: "https://uncyclopedia.ca/w/images/3/3c/Naboo.png", env_image: "https://starwarsblog.starwars.com/wp-content/uploads/2015/10/Screen-Shot-2015-11-05-at-11.25.23-AM.png")
 p5 = Planet.create(name: "Alderaan", population: "2 billion", climate: "Ranges from snow capped mountains to green grassy hills.", planet_image: "https://vignette.wikia.nocookie.net/starwars/images/4/4a/Alderaan.jpg/revision/latest/top-crop/width/360/height/450?cb=20061211013805", env_image: "https://vignette.wikia.nocookie.net/starwars/images/b/bf/Alderaan-Hope.jpg/revision/latest?cb=20110608013153")
 
-
-
 c1 = Character.create(name: "Luke Skywalker", species: "Human", planet_id: 1, avatar: "https://www.toplessrobot.com/wp-content/uploads/2008/10/Episode_4_Luke_Skywalker_1-thumb.jpg")
 c2 = Character.create(name: "Han Solo", species: "Human", planet_id: 2, avatar: "https://upload.wikimedia.org/wikipedia/en/thumb/b/be/Han_Solo_depicted_in_promotional_image_for_Star_Wars_%281977%29.jpg/220px-Han_Solo_depicted_in_promotional_image_for_Star_Wars_%281977%29.jpg")
 c3 = Character.create(name: "Yoda", species: "Unknown", planet_id: 3, avatar: "https://media1.popsugar-assets.com/files/thumbor/LqE3qC_r02vF9FVXJmzsd7JvQT8/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2019/11/19/913/n/1922283/tmp_AQUwGI_54edbb98a270c952_MSDEMST_EC017.jpg")
@@ -22,4 +20,10 @@ c4 = Character.create(name: "C3PO", species: "Robot", planet_id: 1, avatar: "htt
 c5 = Character.create(name: "R2D2", species: "Robot", planet_id: 4, avatar: "https://www.sideshow.com/storage/product-images/2172/r2-d2-deluxe_star-wars_feature.jpg")
 c6 = Character.create(name: "Princess Leia", species: "Human", planet_id: 5, avatar: "https://upload.wikimedia.org/wikipedia/en/1/1b/Princess_Leia%27s_characteristic_hairstyle.jpg")
 
+f1 = Film.create(title: "Episode IV: A New Hope", poster: "https://i.ebayimg.com/images/g/Te0AAOSw-aFc73i7/s-l640.jpg", release_date: "1977-05-25", director: "George Lucas")
+f2 = Film.create(title: "Episode V: The Empire Strikes Back", poster: "https://images-na.ssl-images-amazon.com/images/I/71tglII26nL._AC_SL1001_.jpg", release_date: "1980-05-21", director: "George Lucas")
+f3 = Film.create(title: "Episode VI: Return of the Jedi", poster: "https://i.pinimg.com/originals/27/11/4e/27114ed141e95e152a83ee17ad9014ad.jpg", release_date: "1983-05-25", director: "George Lucas")
 
+c1.films << [f1, f2, f3]
+c2.films << [f1, f2, f3]
+c3.films << [f1, f2, f3]
