@@ -36,6 +36,6 @@ class CharactersController < ApplicationController
     private
 
     def character_params
-        params.permit(:name, :species, :avatar, :planet_name)
+        params.permit(:name, :species, :avatar, :planet_name, :film_ids => [])
     end
 end
